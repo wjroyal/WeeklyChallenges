@@ -243,13 +243,14 @@ namespace ChallengesWithTestsMark8.Tests
         public void CountOfPositiveOddsBelowNumber(int number, int expected)
         {
             // Arrange
-            ChallengesSet02 challenger = new ChallengesSet02();
+           ChallengesSet02 challenger = new ChallengesSet02();
 
             // Act
-            double actual = challenger.CountOfPositiveOddsBelowNumber(number);
+            
+            long actual = ChallengesSet02.CountOfPositiveOddsBelowNumber(number);
 
             // Assert
             Assert.Equal(expected, actual);
-        }
+       }
     }
 }
