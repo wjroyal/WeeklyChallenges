@@ -78,7 +78,10 @@ namespace ChallengesWithTestsMark8
             }
             var n = numbers.Where(num => num % 2 == 0);
             if (n.Count() == 0)
+            {
                 return 0;
+            }
+               
             return n.Average();
 
             
